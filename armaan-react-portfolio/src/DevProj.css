@@ -1,0 +1,98 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+.word-spacing{
+  word-spacing: 0.5em;
+}
+
+.carousel-container{
+position: relative;
+width: 80%; /* 1204px for 3 cards */
+height: 665px;
+overflow-x: scroll;
+  display: flex;
+  flex-wrap: nowrap;
+  scroll-snap-type: x mandatory;
+}
+
+.card{
+width: 375px;
+height: 430px; /* 458px with description */
+position: relative;
+border-radius: 20px;
+background-color: #161616;
+margin-bottom: 25px;
+}
+
+.card:hover{
+    box-shadow:0 0 15px 7px rgba(0,255,0,0.6);
+    animation:cardPulse 2s infinite;
+    animation:openCard 0.5s ease-in-out forwards;
+}
+
+
+@keyframes openCard {
+  from {
+    height:430px;
+  }
+  to {
+    height:565px;
+  }
+}
+
+
+@keyframes cardPulse {
+  0% {
+     filter:drop-shadow( 0px 1px 1px rgba(0,255,0,0.6));
+  }
+  50% {
+     filter:drop-shadow( 0px 1px 1px rgba(0,255,0,0));
+  }
+  100% {
+    filter:drop-shadow( 0px 1px 1px rgba(0,255,0,0.6));
+  }
+}
+
+.arrow-right {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-container::-webkit-scrollbar {
+  height: 12px;
+  background: #222;
+  border-radius: 6px;
+}
+
+.carousel-container::-webkit-scrollbar-thumb {
+  background: #63A54D;
+  border-radius: 6px;
+  border: 2px solid #222;
+}
+
+.carousel-container::-webkit-scrollbar-track {
+  background: #161616;
+  border-radius: 6px;
+}
+
+/* For Firefox */
+.carousel-container {
+  scrollbar-width: thin;
+  scrollbar-color: #63A54D #161616;
+}
+
+.synth-glow {
+      text-shadow: 0 0 5px #3ec232, 0 0 10px #3ec232, 0 0 20px #63a54d;
+    }
+
+
+.card-glow{
+@apply rounded-[20px] w-[375px] h-[458px] hover:shadow-[0_0_15px_7px_rgba(0,255,0,0.6)] hover:animate-pulse
+}
+
+.uncover{
+@apply text-sm transition-all duration-2000 opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-40 overflow-hidden
+}

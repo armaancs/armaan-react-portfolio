@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme{
+    --animate-slide-in-right: slide-in-right 1s ease both;
+    @keyframes slide-in-right {
+        0% {
+            transform: translateX(500px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    }
+}

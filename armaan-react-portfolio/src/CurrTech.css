@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+.synth-glow {
+      text-shadow: 0 0 5px #3ec232, 0 0 10px #3ec232, 0 0 20px #63a54d;
+    }
+
+.rectangle-div{
+width: 255px;
+height: 81px;
+position: relative;
+border-radius: 20px;
+background-color: #161616;
+margin-bottom: 25px;
+}
+
+.rectangle-div:hover{
+    box-shadow:0 0 15px 7px rgba(0,255,0,0.6);
+    animation:cardPulse 2s infinite;
+}
+
+.learning-div{
+width: 255px;
+height: 186px;
+position: relative;
+border-radius: 20px;
+background-color: rgba(0, 0, 0, 0.8);
+margin-bottom: 25px;
+}
+
+.learning-card-div{
+width: 255px;
+height: 81px;
+position: relative;
+border-radius: 20px;
+background-color: rgba(0, 0, 0, 0);
+margin-bottom: 25px;
+}
+
+.learning-div:hover{
+    box-shadow:0 0 15px 7px rgba(0,255,0,0.6);
+    animation:cardPulse 2s infinite;
+}
+
+@keyframes cardPulse {
+  0% {
+     filter:drop-shadow( 0px 3px 3px rgba(0,255,0,0.6));
+  }
+  50% {
+     filter:drop-shadow( 0px 4px 4px rgba(0,255,0,0));
+  }
+  100% {
+    filter:drop-shadow( 0px 4px 4px rgba(0,255,0,0.6));
+  }
+}

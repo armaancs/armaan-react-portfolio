@@ -1,0 +1,90 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+.dark-mode {
+      margin: 0;
+      height: 100vh;
+      background-image: url("./assets/darkMode.png"); /* path to your image */
+      background-size:cover;   /* makes image cover entire screen */
+      background-position: center; /* centers the image */
+      background-repeat: no-repeat; /* prevents tiling */
+      background-attachment: fixed; /* keeps the background fixed during scroll */
+    }
+
+.light-mode {
+      margin: 0;
+      height: 100vh;
+      background-image: url("./assets/lightMode.png"); /* path to your image */
+      background-size:cover;   /* makes image cover entire screen */
+      background-position: 50% 50%; /* centers the image */
+      background-repeat: no-repeat; /* prevents tiling */
+      background-attachment: fixed; /* keeps the background fixed during scroll */
+    }
+
+
+  @keyframes scrollDown{
+    0% {
+      background-position: 50% 50%;
+    }
+    100% {
+      background-position: 50% 100%;
+    }
+  }
+
+h1, h2, h3, h4, h5, h6, p, span, section, body, html, a {
+  @apply transition-colors duration-300 ease-in-out;
+}
+
+
+.rubik-pixels-regular {
+  font-family: "Rubik Pixels", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.jersey-10-regular {
+  font-family: "Jersey 10", sans-serif  ;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.2em;
+}
+
+.coral-pixels-regular {
+  font-family: "Coral Pixels", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.pixelify-sans{
+  font-family: "Pixelify Sans", monospace;
+  line-height: 1.1;
+}
+
+.play-regular {
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.play-bold {
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.play-medium {
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.project-div{
+width: 375px;
+height: 458px;
+position: relative;
+border-radius: 20px;
+background-color: #161616;
+margin-bottom: 25px;
+}
