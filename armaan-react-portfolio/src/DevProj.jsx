@@ -5,6 +5,7 @@ import pokemonImg from './assets/pokemon.png';
 import githubIcon from './assets/github.png';
 import LogozAIimg from './assets/LogozAI.png';
 import mazeAlogirthmImg from './assets/mazeAlgorithm.png';
+import portfolioimg from './assets/portfolio.png';
  
 
 
@@ -38,7 +39,7 @@ const projects = [
     description: "A website that displays the collection of skills I have within programming. Used pixelated aesthetic to match my personality, interests, and creative instincts.",
     madeWith: ["ReactJs", "Tailwind CSS", "JavaScript", "Vite"],
     date:"Last Updated: July 2025",
-    image: "https://via.placeholder.com/400x200?text=Task+Tracker",
+    image: portfolioimg,
     githubLink:"https://github.com/",
   },
 

@@ -88,13 +88,23 @@ function App() {
         <Footer />
       </div>
 
-      {/* Dark Mode Toggle Button */}
       <button
-        className="fixed bottom-4 right-4 bg-gray-800 text-white p-3 rounded-full shadow-lg hover:bg-gray-700 transition-colors"
-        onClick={toggleDarkMode}
-      >
-        {darkMode ? <div className = "flex items-center gap-2"><div className = "w-5 h-5 rounded-full bg-black transition-colours"></div><span>Dark</span></div> : <div className = "flex items-center gap-2"><div className = "w-5 h-5 rounded-full bg-white transition-colours"></div><span>Light</span></div>}
-      </button>
+  onClick={toggleDarkMode}
+  className="fixed bottom-6 right-6 w-28 h-12 bg-blue-300 dark:bg-gray-700 rounded-full flex items-center px-1 cursor-pointer transition-colors duration-300 shadow-lg"
+>
+  {/* Sliding Circle with label and icon */}
+  <div
+    className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold text-sm transform transition-all duration-300 shadow-md
+      ${darkMode 
+        ? "translate-x-16 bg-purple-500 text-purple-100" 
+        : "translate-x-0 bg-yellow-400 text-yellow-700"
+      }`}
+  >
+    {darkMode ? <h1 className='pixelify-sans'>Dark</h1> : <h1 className='pixelify-sans'>Light</h1>}
+  </div>
+</button>
+
+
     </>
   )
 }
