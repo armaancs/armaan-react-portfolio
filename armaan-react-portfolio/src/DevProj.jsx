@@ -32,7 +32,7 @@ const projects = [
     madeWith: "Python",
     description: "A maze generation algorithim I made for an upcoming roblox game. It generates a 2d maze with a 2d array by using a backtracking algorithm.",
     image: mazeAlogirthmImg,
-    githubLink:"https://github.com/",
+    githubLink:"https://github.com/armaancs/maze-generation-algorithm",
   },
   {
     title: "Dev Portfolio",
@@ -40,7 +40,7 @@ const projects = [
     madeWith: ["ReactJs", "Tailwind CSS", "JavaScript", "Vite"],
     date:"Last Updated: July 2025",
     image: portfolioimg,
-    githubLink:"https://github.com/",
+    githubLink:"https://github.com/armaancs/armaan-react-portfolio",
   },
 
 ];

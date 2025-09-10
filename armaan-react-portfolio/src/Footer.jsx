@@ -26,7 +26,7 @@ function Footer() {
 
         {/* Right side - Links */}
         <div className="flex space-x-6 text-2xl items-center">
-          <a href="https://github.com/r0gzz" target="_blank" rel="noopener noreferrer" className="footer-icon">
+          <a href="https://github.com/armaancs" target="_blank" rel="noopener noreferrer" className="footer-icon">
             <FaGithub />
           </a>
           <a href="https://www.linkedin.com/in/armaan-chowdhury-2075a1337/" target="_blank" rel="noopener noreferrer" className="footer-icon">
