@@ -16,7 +16,7 @@ const projects = [
     madeWith:"Java",
     description: "A short demo of pokemon that included a battle system (type disadvantage/advantages included), a 2D map to traverse, and a few pokemon.",
     image: pokemonImg,
-    githubLink:"https://github.com/",
+    githubLink:"https://github.com/armaancs/pokemon-demo",
   },
   {
     title: "LogozAI",
@@ -24,7 +24,7 @@ const projects = [
     madeWith:["HTML", "CSS", "OpenAI API"],
     description: "A website that generates a custom logo using OpenAI's API based on your preferances. This was built during the 2025 Qhacks Hackathon. The image above is a sample logo that was generated.",
     image: LogozAIimg,
-    githubLink:"https://github.com/",
+    githubLink:"https://github.com/armaancs/logoz_ai",
   },
   {
     title: "Maze Generation Algorithm",
