@@ -52,10 +52,11 @@ function Navbar() {
                 max-h-[80vh] overflow-y-auto slide-bounce">
                 <p className="text-sm sm:text-base leading-relaxed text-gray-200">
                   <span className="text-yellow-400 font-semibold">
-                    A second-year Computer Science student at Queen’s University
+                    A Computer Science + Statistics student at Queen’s University
                   </span>{" "}
-                  with a keen interest in software development, AI, and cybersecurity.
-                  Currently seeking internship or collaboration opportunities —
+                  currently working as a GIS Data Engineer Intern at ABEN HUB,
+                  focused on data engineering, data science, and machine learning.
+                  Always open to new opportunities and collaborations —
                   <span className="underline text-green-400"> feel free to contact me!</span>
                 </p>
                 <button

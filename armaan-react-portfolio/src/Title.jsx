@@ -46,39 +46,36 @@ function Title() {
           <div className="inline-flex items-center gap-2 m-3 flex-wrap justify-center">
             <img src={Rocket} className="h-8 md:h-10" alt="Rocket" />
             <p className="pixelify-sans text-sm sm:text-lg md:text-xl synth-glow">
-              Software | Web Dev | UI/UX | AI Enthusiast
+              Data Engineering | Data Science | Software | Machine Learning
             </p>
             <img src={AI} className="h-8 w-8 md:h-12 md:w-11 mb-1" alt="AI" />
           </div>
 
-{/* Socials */}
-<div className="inline-flex gap-4 mt-4">
-  <a href="https://github.com/armaancs" target="_blank" rel="noopener noreferrer">
-    <img
-      src={github}
-      alt="GitHub"
-      className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 
-                 hover:animate-spin transition-transform duration-300"
-    />
-  </a>
-  <a href="https://www.instagram.com/armaan.cxx/" target="_blank" rel="noopener noreferrer">
-    <img
-      src={instagram}
-      alt="Instagram"
-      className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 
-                 hover:animate-spin transition-transform duration-300"
-    />
-  </a>
-  <a href="https://www.linkedin.com/in/armaan-chowdhury-2075a1337/" target="_blank" rel="noopener noreferrer">
-    <img
-      src={linkedIn}
-      alt="LinkedIn"
-      className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 
-                 hover:animate-spin transition-transform duration-300"
-    />
-  </a>
-</div>
-
+          {/* Socials */}
+          <div className="inline-flex gap-4 mt-4">
+            <a href="https://github.com/armaancs" target="_blank" rel="noopener noreferrer">
+              <img
+                src={github}
+                alt="GitHub"
+                className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14
+                           hover:animate-spin transition-transform duration-300"
+              />
+            </a>
+            <img
+              src={instagram}
+              alt="Instagram"
+              className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14
+                         hover:animate-spin transition-transform duration-300"
+            />
+            <a href="https://www.linkedin.com/in/armaan-chowdhury-2075a1337/" target="_blank" rel="noopener noreferrer">
+              <img
+                src={linkedIn}
+                alt="LinkedIn"
+                className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14
+                           hover:animate-spin transition-transform duration-300"
+              />
+            </a>
+          </div>
 
           {/* Scroll Down Prompt */}
           <div className="pixelify-sans flex flex-col items-center justify-center mt-8 animate-bounce cursor-pointer opacity-80">

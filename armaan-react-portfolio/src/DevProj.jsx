@@ -6,7 +6,8 @@ import githubIcon from './assets/github.png';
 import LogozAIimg from './assets/LogozAI.png';
 import mazeAlogirthmImg from './assets/mazeAlgorithm.png';
 import portfolioimg from './assets/portfolio.png';
- 
+import solarAideImg from './assets/SolarAIDE.svg';
+
 
 
 const projects = [
@@ -42,6 +43,14 @@ const projects = [
     image: portfolioimg,
     githubLink:"https://github.com/armaancs/armaan-react-portfolio",
   },
+  {
+    title: "SolarAIDE",
+    date: "Last Updated: July 2026",
+    madeWith: ["React", "Mapbox GL JS", "Turf.js"],
+    description: "An interactive terrain suitability platform for solar site assessment, built during my GIS Data Engineer internship at ABEN HUB. Cut elevation API calls by 99% using DEM-based slope analysis.",
+    image: solarAideImg,
+    githubLink: null,
+  },
 
 ];
 
@@ -70,6 +79,42 @@ export default function ProjectCarousel(){
     <div className="flex justify-center gap-4">
           <div className="carousel-container bg-[rgba(0,0,0,0.5)] rounded-lg  flex justify-start items-center gap-5">
             <div id = "placeholder" className="w-5 h-30 "></div>
+
+            {/**SolarAIDE - July 2026*/}
+            <div id = "card">
+              <div  className="card rounded-[20px] w -[375px] h-[360px] group relative bg-gray-900 text-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105">
+                <div className= "items-center justify-center flex flex-col">
+                <img src={projects[4].image} alt={projects[4].title} className="w-95 h-90 object-cover rounded-t-[20px] "/>
+                <div className = "flex items-center justify-between w-full p-3">
+                  <div>
+                  <h1 className = "play-bold text-2xl text-[#63A54D]">{projects[4].title} </h1>
+                  <p className="play-regular text-gray-400">{projects[4].date}</p>
+                  </div>
+
+                  {projects[4].githubLink && (
+                    <a href = {projects[4].githubLink} target="_blank" ><img src = {githubIcon} className="duration-300 hover:scale-120"/></a>
+                  )}
+                </div>
+                <p className="uncover pl-4 pr-4">{projects[4].description}</p>
+
+                 {/**Made with  section*/}
+                <div className="uncover flex flex-row justify-center items-center w-full pr-4 pt-1.5 gap-3">
+                  <div className="flex items-center justify-center gap-2 box-border border-2">
+                    <h1 className = "play-regular text-sm text-white pl-1 pr-1 ">{projects[4].madeWith[0]}</h1>
+                  </div>
+                  <div className="flex items-center justify-center gap-2 box-border border-2">
+                    <h1 className = "play-regular text-sm text-white pl-1 pr-1 ">{projects[4].madeWith[1]}</h1>
+                  </div>
+                  <div className="flex items-center justify-center gap-2 box-border border-2">
+                    <h1 className = "play-regular text-sm text-white pl-1 pr-1 ">{projects[4].madeWith[2]}</h1>
+                  </div>
+                </div>
+                {/**End of Made with section*/}
+
+                </div>
+            </div>
+            </div>
+            {/*End of SolarAIDE*/}
 
             {/**Dev Portfolio - June 2022*/}
             <div id = "card">

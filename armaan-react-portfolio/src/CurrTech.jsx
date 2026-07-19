@@ -75,10 +75,21 @@ function CurrTech(){
                   </p>
                 </div>
               </div>
-            
-          
-                <div className = "rectangle-div mb-8">
-                 
+
+
+                {/**Mapbox GL JS */}
+                <div className="rectangle-div flex items-center px-3 space-x-1 hover:scale-105 transition-transform duration-300">
+
+                  <div className="pl-0.5 pt-1 pb-1 pr-1 rounded-lg">
+                    <div className = "w-[63px] h-[56px] bg-[#0A2E3D] rounded-lg items-center justify-center flex">
+                    <span className="play-bold text-white text-sm">MB</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <p className="play-bold text-white font-semibold text-[20px] pb-[3px]">Mapbox GL JS</p>
+                    <p className="play-regular text-gray-400 text-[13px]">Geospatial Mapping</p>
+                  </div>
                 </div>
 
               </div>{/**End of first col */}
@@ -140,9 +151,6 @@ function CurrTech(){
                   </div>
                 </div>
 
-                <div className = "rectangle-div mb-8">
-                 
-                </div>
               </div> {/**End of second col */}
 
               <div id = "third-col" className = "m-5">
@@ -179,11 +187,19 @@ function CurrTech(){
                   </div>
                 </div>
 
-                <div className = "rectangle-div mb-8">
-                 
-                </div>
-                <div className = "rectangle-div mb-8">
-                 
+                {/**Turf.js */}
+                <div className="rectangle-div flex items-center px-3 space-x-1 hover:scale-105 transition-transform duration-300">
+
+                  <div className="pl-0.5 pt-1 pb-1 pr-1 rounded-lg">
+                    <div className = "w-[63px] h-[56px] bg-[#4A2E1B] rounded-lg items-center justify-center flex">
+                    <span className="play-bold text-white text-sm">TF</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <p className="play-bold text-white font-semibold text-[20px] pb-[3px] pt-1">Turf.js</p>
+                    <p className="play-regular text-gray-400 text-[13px]">Spatial Analysis Library</p>
+                  </div>
                 </div>
               </div>
 
@@ -221,11 +237,20 @@ function CurrTech(){
                     <p className="play-regular text-gray-400 text-[13px]">CSS Framework </p>
                   </div>
                 </div>
-                <div className = "rectangle-div mb-8">
-                 
-                </div>
-                <div className = "rectangle-div mb-8">
-                 
+
+                {/**SQL */}
+                <div className="rectangle-div flex items-center px-3 space-x-1 hover:scale-105 transition-transform duration-300">
+
+                  <div className="pl-0.5 pt-1 pb-1 pr-1 rounded-lg">
+                    <div className = "w-[63px] h-[56px] bg-[#003B57] rounded-lg items-center justify-center flex">
+                    <span className="play-bold text-white text-sm">SQL</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <p className="play-bold text-white font-semibold text-[20px] pb-[3px]">SQL</p>
+                    <p className="play-regular text-gray-400 text-[13px]">Data Querying &amp; Analysis</p>
+                  </div>
                 </div>
               </div>
 

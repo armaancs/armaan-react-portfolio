@@ -1,0 +1,57 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1f14" />
+      <stop offset="100%" stop-color="#0a0a0a" />
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#bgGrad)" />
+
+  <!-- terrain slope grid -->
+  <g opacity="0.9">
+    <rect x="40" y="45" width="40" height="40" fill="#2f9e44" />
+    <rect x="80" y="45" width="40" height="40" fill="#37b24d" />
+    <rect x="120" y="45" width="40" height="40" fill="#2f9e44" />
+    <rect x="40" y="85" width="40" height="40" fill="#37b24d" />
+    <rect x="80" y="85" width="40" height="40" fill="#63A54D" />
+    <rect x="120" y="85" width="40" height="40" fill="#2f9e44" />
+
+    <rect x="160" y="45" width="40" height="40" fill="#e6b800" />
+    <rect x="200" y="45" width="40" height="40" fill="#f2c94c" />
+    <rect x="160" y="85" width="40" height="40" fill="#e6b800" />
+    <rect x="40" y="125" width="40" height="40" fill="#f2c94c" />
+    <rect x="80" y="125" width="40" height="40" fill="#e6b800" />
+
+    <rect x="240" y="45" width="40" height="40" fill="#c92a2a" />
+    <rect x="280" y="45" width="40" height="40" fill="#e03131" />
+    <rect x="240" y="85" width="40" height="40" fill="#e03131" />
+    <rect x="120" y="125" width="40" height="40" fill="#c92a2a" />
+    <rect x="200" y="85" width="40" height="40" fill="#e03131" />
+
+    <rect x="280" y="85" width="40" height="40" fill="#37b24d" />
+    <rect x="320" y="45" width="40" height="40" fill="#2f9e44" />
+    <rect x="320" y="85" width="40" height="40" fill="#e6b800" />
+
+    <rect x="40" y="165" width="40" height="40" fill="#2f9e44" />
+    <rect x="80" y="165" width="40" height="40" fill="#37b24d" />
+    <rect x="120" y="165" width="40" height="40" fill="#e6b800" />
+    <rect x="160" y="165" width="40" height="40" fill="#37b24d" />
+    <rect x="200" y="165" width="40" height="40" fill="#c92a2a" />
+    <rect x="240" y="165" width="40" height="40" fill="#e03131" />
+    <rect x="280" y="165" width="40" height="40" fill="#2f9e44" />
+    <rect x="320" y="165" width="40" height="40" fill="#37b24d" />
+
+    <rect x="40" y="205" width="40" height="40" fill="#37b24d" />
+    <rect x="80" y="205" width="40" height="40" fill="#e6b800" />
+    <rect x="120" y="205" width="40" height="40" fill="#2f9e44" />
+    <rect x="160" y="205" width="40" height="40" fill="#c92a2a" />
+    <rect x="200" y="205" width="40" height="40" fill="#37b24d" />
+    <rect x="240" y="205" width="40" height="40" fill="#2f9e44" />
+    <rect x="280" y="205" width="40" height="40" fill="#e6b800" />
+    <rect x="320" y="205" width="40" height="40" fill="#37b24d" />
+  </g>
+
+  <!-- dashed site boundary polygon -->
+  <polygon points="35,40 250,55 355,140 210,245 35,205" fill="none" stroke="#ffffff" stroke-width="3" stroke-dasharray="7 6" />
+</svg>

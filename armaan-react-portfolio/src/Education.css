@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+.synth-glow {
+      text-shadow: 0 0 5px #3ec232, 0 0 10px #3ec232, 0 0 20px #63a54d;
+    }
