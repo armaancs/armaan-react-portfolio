@@ -151,6 +151,21 @@ function CurrTech(){
                   </div>
                 </div>
 
+                {/**pandas */}
+                <div className="rectangle-div flex items-center px-3 space-x-1 hover:scale-105 transition-transform duration-300">
+
+                  <div className="pl-0.5 pt-1 pb-1 pr-1 rounded-lg">
+                    <div className = "w-[63px] h-[56px] bg-[#150458] rounded-lg items-center justify-center flex">
+                    <span className="play-bold text-white text-sm">PD</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <p className="play-bold text-white font-semibold text-[20px] pb-[3px]">pandas</p>
+                    <p className="play-regular text-gray-400 text-[13px]">Data Analysis Library</p>
+                  </div>
+                </div>
+
               </div> {/**End of second col */}
 
               <div id = "third-col" className = "m-5">
@@ -199,6 +214,21 @@ function CurrTech(){
                   <div>
                     <p className="play-bold text-white font-semibold text-[20px] pb-[3px] pt-1">Turf.js</p>
                     <p className="play-regular text-gray-400 text-[13px]">Spatial Analysis Library</p>
+                  </div>
+                </div>
+
+                {/**scikit-learn */}
+                <div className="rectangle-div flex items-center px-3 space-x-1 hover:scale-105 transition-transform duration-300">
+
+                  <div className="pl-0.5 pt-1 pb-1 pr-1 rounded-lg">
+                    <div className = "w-[63px] h-[56px] bg-[#8A4B00] rounded-lg items-center justify-center flex">
+                    <span className="play-bold text-white text-sm">SK</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <p className="play-bold text-white font-semibold text-[20px] pb-[3px] pt-1">scikit-learn</p>
+                    <p className="play-regular text-gray-400 text-[13px]">Machine Learning Library</p>
                   </div>
                 </div>
               </div>
@@ -250,6 +280,21 @@ function CurrTech(){
                   <div>
                     <p className="play-bold text-white font-semibold text-[20px] pb-[3px]">SQL</p>
                     <p className="play-regular text-gray-400 text-[13px]">Data Querying &amp; Analysis</p>
+                  </div>
+                </div>
+
+                {/**Power BI */}
+                <div className="rectangle-div flex items-center px-3 space-x-1 hover:scale-105 transition-transform duration-300">
+
+                  <div className="pl-0.5 pt-1 pb-1 pr-1 rounded-lg">
+                    <div className = "w-[63px] h-[56px] bg-[#6B5200] rounded-lg items-center justify-center flex">
+                    <span className="play-bold text-white text-sm">BI</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <p className="play-bold text-white font-semibold text-[20px] pb-[3px]">Power BI</p>
+                    <p className="play-regular text-gray-400 text-[13px]">Dashboards &amp; Data Visualization</p>
                   </div>
                 </div>
               </div>

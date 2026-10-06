@@ -25,14 +25,15 @@ export default function Education() {
             <span className="text-[#63A54D]">@ Queen's University</span>
           </h3>
           <p className="text-gray-300">
-            Minoring in Statistics &amp; Computer Science
+            Minor in Statistics
           </p>
           <time className="block mb-2 text-sm text-gray-400">
-            Sep 2024 - Apr 2028
+            Sep 2024 - May 2028 (Expected)
           </time>
           <p className="text-gray-300">
-            Community Officer @ Queen's Data Analytics Association · TCS
-            Design Team Lead @ Queen's Racing Formula SAE Team
+            Machine Learning Engineer @ QMIND · Data Analyst @ Queen's Data
+            Analytics Association · Electrical Team Member @ Queen's Racing
+            Formula SAE Team
           </p>
         </div>
       </div>

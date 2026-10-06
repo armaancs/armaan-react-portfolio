@@ -4,6 +4,7 @@ import DevProj from './DevProj.jsx'
 import Title from './Title.jsx'
 import CurrTech from './CurrTech.jsx'
 import Education from './Education.jsx'
+import Certifications from './Certifications.jsx'
 import Experience from './Experience.jsx'
 import Footer from './Footer.jsx'
 import React, { useState, useEffect } from 'react';
@@ -86,6 +87,7 @@ function App() {
         <CurrTech />
         <DevProj />
         <Education />
+        <Certifications />
         <Experience />
         <Footer />
       </div>

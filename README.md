@@ -20,7 +20,7 @@
 
 ## 📖 About
 
-This is my personal developer portfolio. I'm a Computer Science + Statistics student at **Queen's University**, focused on data engineering, data science, and machine learning. The site uses a pixelated, synthwave-inspired look to match my interests and creative style, and showcases my tech stack, projects, education, and experience in one place.
+This is my personal developer portfolio. I'm a Computer Science + Statistics student at **Queen's University**, focused on machine learning, data engineering, and data science. The site uses a pixelated, synthwave-inspired look to match my interests and creative style, and showcases my tech stack, projects, education, and experience in one place.
 
 ## ✨ Features
 
@@ -38,10 +38,11 @@ This is my personal developer portfolio. I'm a Computer Science + Statistics stu
 | Section | What's inside |
 | --- | --- |
 | **Hero** | Name, tagline, social links, and profile photo |
-| **Current Technologies** | Python, JavaScript, React, Node.js, AWS, SQL, Tailwind, Figma, Git, Mapbox GL JS, Turf.js, and more |
-| **Developed Projects** | SolarAIDE, Dev Portfolio, Maze Generation Algorithm, LogozAI, Pokémon Demo |
-| **Education** | Bachelor of Computing (Hons.) @ Queen's University |
-| **Experience** | Timeline of roles from GIS Data Engineer Intern @ ABEN HUB back to earlier positions |
+| **Current Technologies** | Python, JavaScript, React, Node.js, AWS, SQL, pandas, scikit-learn, Power BI, Tailwind, Figma, Git, Mapbox GL JS, Turf.js, and more |
+| **Developed Projects** | Hotel Revenue Dashboard, SolarAIDE, Dev Portfolio, Maze Generation Algorithm, LogozAI, Pokémon Demo |
+| **Education** | Bachelor of Computing (Hons.), Minor in Statistics @ Queen's University |
+| **Certifications** | Credential cards with courses, skills, and verification links, starting with the Machine Learning Specialization @ DeepLearning.AI & Stanford Online |
+| **Experience** | Timeline of roles from Machine Learning Engineer @ QMIND and Data Engineer Intern @ ABEN HUB back to earlier positions |
 
 ## 🛠️ Tech Stack
 
@@ -65,6 +66,7 @@ armaan-react-portfolio/
 │   ├── CurrTech.jsx     # Technologies grid
 │   ├── DevProj.jsx      # Project carousel
 │   ├── Education.jsx
+│   ├── Certifications.jsx  # Credential cards (add new ones to the list at the top)
 │   ├── Experience.jsx   # Career timeline
 │   ├── Footer.jsx
 │   └── main.jsx         # Entry point

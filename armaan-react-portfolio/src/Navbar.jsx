@@ -11,7 +11,13 @@ function Navbar() {
   const scrollTo = (pos) => window.scrollTo({ top: pos, behavior: 'smooth' });
   const Technologies = () => scrollTo(650);
   const Projects = () => scrollTo(1230);
-  const Experience = () => scrollTo(2000);
+  // Scroll to a section by id, leaving room for the sticky navbar
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) scrollTo(section.getBoundingClientRect().top + window.scrollY - 80);
+  };
+  const Certifications = () => scrollToSection("Certifications");
+  const Experience = () => scrollToSection("Experience");
 
   useEffect(() => {
     const handleScroll = () => setShowNavbar(window.scrollY > 600);
@@ -54,8 +60,9 @@ function Navbar() {
                   <span className="text-yellow-400 font-semibold">
                     A Computer Science + Statistics student at Queen’s University
                   </span>{" "}
-                  currently working as a GIS Data Engineer Intern at ABEN HUB,
-                  focused on data engineering, data science, and machine learning.
+                  currently working as a Machine Learning Engineer at QMIND and a
+                  Data Engineer Intern at ABEN HUB, focused on machine learning,
+                  data engineering, and data science.
                   Always open to new opportunities and collaborations —
                   <span className="underline text-green-400"> feel free to contact me!</span>
                 </p>
@@ -99,7 +106,7 @@ function Navbar() {
                 bg-[rgba(0,0,0,0.85)] text-white p-4 rounded-lg shadow-lg z-50 
                 max-h-[80vh] overflow-y-auto slide-bounce">
                 <p className="text-sm sm:text-base leading-relaxed text-gray-200">
-                  A <span className="text-green-400 font-semibold">Game Dev Platform</span> powered by <span className="text-green-400 font-semibold">GenAI</span>, giving independent developers <span className="text-green-400 font-semibold">free original assets</span> for their games including sprite maps.
+                  A <span className="text-green-400 font-semibold">clinical RAG benchmark</span> at <span className="text-green-400 font-semibold">QMIND</span>, comparing <span className="text-green-400 font-semibold">4 retrieval methods</span> (including GraphRAG) across 200 patient-timeline questions over ~4K clinical notes.
                 </p>
                 <button
                   onClick={() => setIsOpenDev(false)}
@@ -110,6 +117,14 @@ function Navbar() {
               </div>
             )}
           </div>
+
+          {/* Certifications */}
+          <button
+            onClick={Certifications}
+            className="font-pixelify text-base sm:text-lg md:text-xl text-white hover:text-[#3EC232] hover:underline transition-colors"
+          >
+            Certifications
+          </button>
 
           {/* Experience */}
           <button

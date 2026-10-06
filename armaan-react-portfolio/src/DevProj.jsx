@@ -7,6 +7,7 @@ import LogozAIimg from './assets/LogozAI.png';
 import mazeAlogirthmImg from './assets/mazeAlgorithm.png';
 import portfolioimg from './assets/portfolio.png';
 import solarAideImg from './assets/SolarAIDE.svg';
+import hotelRevenueImg from './assets/HotelRevenue.svg';
 
 
 
@@ -22,8 +23,8 @@ const projects = [
   {
     title: "LogozAI",
     date:"Last Updated: January 2025",
-    madeWith:["HTML", "CSS", "OpenAI API"],
-    description: "A website that generates a custom logo using OpenAI's API based on your preferances. This was built during the 2025 Qhacks Hackathon. The image above is a sample logo that was generated.",
+    madeWith:["MongoDB", "JavaScript", "Generative AI"],
+    description: "An AI logo-generation platform built and shipped end to end in 36 hours at QHacks 2025. Supported 50+ beta users with a MongoDB schema for inputs and generated outputs. The image above is a sample logo that was generated.",
     image: LogozAIimg,
     githubLink:"https://github.com/armaancs/logoz_ai",
   },
@@ -47,8 +48,16 @@ const projects = [
     title: "SolarAIDE",
     date: "Last Updated: July 2026",
     madeWith: ["React", "Mapbox GL JS", "Turf.js"],
-    description: "An interactive terrain suitability platform for solar site assessment, built during my GIS Data Engineer internship at ABEN HUB. Cut elevation API calls by 99% using DEM-based slope analysis.",
+    description: "An interactive terrain suitability platform for solar site assessment, built during my Data Engineer internship at ABEN HUB. Cut upstream API calls by 99% and improved elevation precision from ±10 m to ±0.1 m.",
     image: solarAideImg,
+    githubLink: null,
+  },
+  {
+    title: "Hotel Revenue Dashboard",
+    date: "Last Updated: August 2026",
+    madeWith: ["SQL", "Power BI", "Python (pandas)", "Excel"],
+    description: "An end-to-end SQL pipeline over 119K+ bookings feeding a 2-page Power BI dashboard tracking $26M in revenue, ADR, and a 37% cancellation rate. Flagged 38% of bookings as underpriced with a rate-benchmarking model.",
+    image: hotelRevenueImg,
     githubLink: null,
   },
 
@@ -79,6 +88,45 @@ export default function ProjectCarousel(){
     <div className="flex justify-center gap-4">
           <div className="carousel-container bg-[rgba(0,0,0,0.5)] rounded-lg  flex justify-start items-center gap-5">
             <div id = "placeholder" className="w-5 h-30 "></div>
+
+            {/**Hotel Revenue Dashboard - August 2026*/}
+            <div id = "card">
+              <div  className="card rounded-[20px] w -[375px] h-[360px] group relative bg-gray-900 text-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105">
+                <div className= "items-center justify-center flex flex-col">
+                <img src={projects[5].image} alt={projects[5].title} className="w-95 h-90 object-cover rounded-t-[20px] "/>
+                <div className = "flex items-center justify-between w-full p-3">
+                  <div>
+                  <h1 className = "play-bold text-xl text-[#63A54D]">{projects[5].title} </h1>
+                  <p className="play-regular text-gray-400">{projects[5].date}</p>
+                  </div>
+
+                  {projects[5].githubLink && (
+                    <a href = {projects[5].githubLink} target="_blank" ><img src = {githubIcon} className="duration-300 hover:scale-120"/></a>
+                  )}
+                </div>
+                <p className="uncover pl-4 pr-4">{projects[5].description}</p>
+
+                 {/**Made with  section*/}
+                <div className="uncover flex flex-row justify-center items-center w-full pr-4 pt-1.5 gap-3">
+                  <div className="flex items-center justify-center gap-2 box-border border-2">
+                    <h1 className = "play-regular text-sm text-white pl-1 pr-1 ">{projects[5].madeWith[0]}</h1>
+                  </div>
+                  <div className="flex items-center justify-center gap-2 box-border border-2">
+                    <h1 className = "play-regular text-sm text-white pl-1 pr-1 ">{projects[5].madeWith[1]}</h1>
+                  </div>
+                  <div className="flex items-center justify-center gap-2 box-border border-2">
+                    <h1 className = "play-regular text-sm text-white pl-1 pr-1 ">{projects[5].madeWith[2]}</h1>
+                  </div>
+                  <div className="flex items-center justify-center gap-2 box-border border-2">
+                    <h1 className = "play-regular text-sm text-white pl-1 pr-1 ">{projects[5].madeWith[3]}</h1>
+                  </div>
+                </div>
+                {/**End of Made with section*/}
+
+                </div>
+            </div>
+            </div>
+            {/*End of Hotel Revenue Dashboard*/}
 
             {/**SolarAIDE - July 2026*/}
             <div id = "card">

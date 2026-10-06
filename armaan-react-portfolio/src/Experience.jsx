@@ -26,52 +26,67 @@ export default function Experience() {
 
     <div className="relative border-l border-gray-700 text-black dark:text-white m-3 mt-1 pb-1">
 
-      {/** Item 1 - ABEN HUB */}
+      {/** Item 1 - QMIND */}
+      <div className="mb-10 ml-6 flex gap-4">
+        <span className="absolute -left-3 flex items-center justify-center w-6 h-6 bg-[#63A54D] rounded-full ring-8 ring-gray-900"></span>
+        <InitialsBadge initials="QM" bg="#3B1F5C" />
+        <div>
+          <h3 className="text-white dark:text-black text-lg font-semibold"><span className="synth-glow">
+            Machine Learning Engineer </span><span className="text-[#63A54D]">@ QMIND</span>
+          </h3>
+          <time className="block mb-2 text-sm text-gray-400">Sep 2026 - Present</time>
+          <p className="text-gray-300">
+            Benchmarking 4 retrieval methods (vector, metadata-filtered, GraphRAG, and temporal GraphRAG) across 200 patient-timeline questions. Built the RAG pipeline with Python, FAISS, and LangGraph over ~4K clinical notes, and evaluating 6 metrics including Recall@K, Precision@K, grounding, and abstention with Ragas on Synthea data.
+          </p>
+        </div>
+      </div>
+
+      {/** Item 2 - ABEN HUB */}
       <div className="mb-10 ml-6 flex gap-4">
         <span className="absolute -left-3 flex items-center justify-center w-6 h-6 bg-[#63A54D] rounded-full ring-8 ring-gray-900"></span>
         <InitialsBadge initials="AH" bg="#1B3A2B" />
         <div>
           <h3 className="text-white dark:text-black text-lg font-semibold"><span className="synth-glow">
-            GIS Data Engineer Intern </span><span className="text-[#63A54D]">@ ABEN HUB</span>
+            Data Engineer Intern </span><span className="text-[#63A54D]">@ ABEN HUB</span>
           </h3>
           <time className="block mb-2 text-sm text-gray-400">Apr 2026 - Present</time>
           <p className="text-gray-300">
-            Building a geospatial terrain suitability platform for utility-scale solar site assessment. Redesigned the elevation data pipeline to reduce API calls by 99%, improved elevation precision to ±0.1m using Digital Elevation Model pixel decoding, and shipped a full site-analysis web app with React and Mapbox GL JS.
+            Cut upstream API calls by 99% (500+ down to 1–4 per run) by redesigning the ETL pipeline to batch requests by shared data tile. Improved data precision from ±10 m to ±0.1 m by decoding values directly from source REST APIs, built a Python engine that converts raw elevation-grid data into classified terrain metrics, and delivered a 6-phase data-driven web app in one sprint with React and Mapbox GL JS.
           </p>
         </div>
       </div>
 
-      {/** Item 2 - Queen's Data Analytics Association */}
+      {/** Item 3 - Queen's Data Analytics Association */}
       <div className="mb-10 ml-6 flex gap-4">
         <span className="absolute -left-3 flex items-center justify-center w-6 h-6 bg-[#63A54D] rounded-full ring-8 ring-gray-900"></span>
         <InitialsBadge initials="QDA" bg="#00274D" />
         <div>
           <h3 className="text-white dark:text-black text-lg font-semibold"><span className="synth-glow">
-            Community Data Officer </span><span className="text-[#63A54D]">@ Queen's Data Analytics Association</span>
+            Data Analyst </span><span className="text-[#63A54D]">@ Queen's Data Analytics Association</span>
           </h3>
-          <time className="block mb-2 text-sm text-gray-400">Oct 2025 - Present</time>
+          <time className="block mb-2 text-sm text-gray-400">Oct 2025 - Aug 2026</time>
           <p className="text-gray-300">
-            Collect and consolidate datasets from engineering design teams to support structured analysis. Organize analytics-focused events and workshops, tracking participation and engagement metrics, and connect members with relevant resources.
+            Contributed to a published QDAA–QRET research paper deriving specific impulse (~200.7 s) from rocket hot-fire data. Transformed noisy sensor data into stable metrics via interpolation, Savitzky-Golay smoothing, and differentiation in Python, and estimated oxidizer mass-flow rate through numerical differentiation and linear regression on time-series data.
           </p>
         </div>
       </div>
 
-      {/** Item 3 - Queen's Racing FSAE */}
+      {/** Item 4 - Queen's Racing FSAE */}
       <div className="mb-10 ml-6 flex gap-4">
         <span className="absolute -left-3 flex items-center justify-center w-6 h-6 bg-[#63A54D] rounded-full ring-8 ring-gray-900"></span>
         <InitialsBadge initials="QR" bg="#5C0A0A" />
         <div>
           <h3 className="text-white dark:text-black text-lg font-semibold"><span className="synth-glow">
-            TCS Design Team Lead </span><span className="text-[#63A54D]">@ Queen's Racing Formula SAE Team</span>
+            Electrical Team Member </span><span className="text-[#63A54D]">@ Queen's Racing Formula SAE Team</span>
           </h3>
-          <time className="block mb-2 text-sm text-gray-400">Sep 2025 - Present</time>
+          <time className="block mb-2 text-sm text-gray-400">Sep 2025 - Aug 2026</time>
           <p className="text-gray-300">
-            Collaborate with the Tractive Systems subteam to design and implement a traction control system. Conduct research and simulations on torque vectoring and wheel slip detection, and assist with hardware-software integration for reliable performance under racing conditions.
+            Collaborated with the Tractive Systems subteam to design and implement a traction control system. Conducted research and simulations on torque vectoring and wheel slip detection, and assisted with hardware-software integration for reliable performance under racing conditions.
           </p>
         </div>
       </div>
 
-      {/** Item 4 */}
+      {/** Item 5 */}
       <div className="mb-10 ml-6 flex gap-4">
         <span className="absolute -left-3 flex items-center justify-center w-6 h-6 bg-[#63A54D] rounded-full ring-8 ring-gray-900"></span>
         <div className="flex-shrink-0 w-14 h-14 rounded-full overflow-hidden border-2 border-gray-700 bg-gray-800">
@@ -115,7 +130,7 @@ export default function Experience() {
           </h3>
           <time className="block mb-2 text-sm text-gray-400">Jan 2025</time>
           <p className="text-gray-300">
-            Led the design and implementation of a chatbot for custom logo creation tailored to user preferences using OpenAI's DALL·E 3, integrated a Node.js-based database for user data management, and built dynamic frontend animations with HTML, CSS, and JavaScript.
+            Led the team that built and shipped LogozAI, an AI logo-generation platform, end to end in 36 hours. Used OpenAI's DALL·E 3 for image generation, designed a MongoDB schema for user input and generated outputs supporting 50+ beta users, and built dynamic frontend animations with HTML, CSS, and JavaScript.
           </p>
         </div>
       </div>

@@ -46,7 +46,7 @@ function Title() {
           <div className="inline-flex items-center gap-2 m-3 flex-wrap justify-center">
             <img src={Rocket} className="h-8 md:h-10" alt="Rocket" />
             <p className="pixelify-sans text-sm sm:text-lg md:text-xl synth-glow">
-              Data Engineering | Data Science | Software | Machine Learning
+              Machine Learning | Data Engineering | Data Science | Software
             </p>
             <img src={AI} className="h-8 w-8 md:h-12 md:w-11 mb-1" alt="AI" />
           </div>
