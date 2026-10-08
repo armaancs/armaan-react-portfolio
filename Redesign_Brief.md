@@ -185,7 +185,7 @@ Remove the blocking loader. If any intro remains, it is the hero name reveal, tr
 - Lighthouse targets: Performance 90+, Accessibility 95+. Convert large PNGs to WebP/AVIF where it does not blur the pixel art.
 
 ## 4. Process
-Each design is built on its own branch in its own directory (a git worktree), so `main` and the live site stay untouched. This design: branch `redesign`, directory `C:\dev\Tech_Portfolio-redesign`.
+Each design is built in its own directory beside `armaan-react-portfolio/`, which stays untouched as the live site. This design lives in `redesign1/`. Further designs get `redesign2/`, `redesign3/` and so on, created only when asked for.
 
 1. Output Design Read + audit + a short plan. Wait for approval. (Done, approved Oct 6 2026.)
 2. Phase 1: refactor to data-driven components, fix bugs above, no visual change yet. Verify `npm run build` passes.
